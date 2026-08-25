@@ -1,0 +1,23 @@
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+# Production build output
+frontend/dist/
+
+# Python cache & virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+ENV/
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log

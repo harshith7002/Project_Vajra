@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  vajra-workbench:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vajra_sovereign_workbench
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
