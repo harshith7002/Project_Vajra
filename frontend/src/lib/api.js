@@ -11,7 +11,7 @@ const DEMO_DOCUMENTS = [
     ocr_status: 'NOT_REQUIRED',
     indexed_status: 'INDEXED_LOCALLY',
     chunks_count: 8,
-    timestamp: new Date().isoformat ? new Date().toISOString() : '2026-08-24T10:30:00Z',
+    timestamp: '2026-08-24T10:30:00Z',
     pages: [
       {
         page: 1,
@@ -223,7 +223,7 @@ export async function approveDecision(requestId, decision, notes = '') {
     status: "PROCESSED",
     decision: {
       request_id: requestId,
-      status: decision.upper() === 'APPROVE' ? 'APPROVED' : 'REJECTED',
+      status: String(decision).toUpperCase() === 'APPROVE' ? 'APPROVED' : 'REJECTED',
       generated_docx_filename: filename,
       reviewer: "Chief Maintenance Operations Lead"
     }
@@ -291,7 +291,7 @@ export async function fetchSystemMetrics() {
     cpu_usage_percent: 14.2,
     ram_used_gb: 8.4,
     ram_total_gb: 32.0,
-    ram_usage_percent: 26.2.toFixed(1),
+    ram_usage_percent: (26.2).toFixed(1),
     hardware_mode: "REAL HOST CPU / RAM TELEMETRY",
     gpu_name: "UNAVAILABLE IN THIS ENVIRONMENT (HOST CPU INFERENCE ACTIVE)",
     gpu_utilization_percent: 0.0,

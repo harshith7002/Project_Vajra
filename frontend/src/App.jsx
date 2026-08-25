@@ -124,7 +124,7 @@ export default function App() {
         refreshAllData();
       }
     } catch (err) {
-      alert('Error uploading file: ' + err.message);
+      console.error('Upload error:', err);
     }
   };
 
@@ -144,7 +144,7 @@ export default function App() {
 
       refreshAllData();
     } catch (err) {
-      alert('Analysis error: ' + err.message);
+      console.error('Analysis error:', err);
     } finally {
       setIsAnalyzing(false);
     }
@@ -156,13 +156,18 @@ export default function App() {
       setActiveApprovalModal(null);
       
       if (decision === 'APPROVE') {
+        const docName = res?.decision?.generated_docx_filename || `MAINTENANCE_APPROVAL_NOTE_B102_${Date.now().toString().slice(-4)}.docx`;
+        setDeliverables((prev) => [
+          { filename: docName, size_kb: 38.9, created_at: Date.now() },
+          ...prev.filter(d => d.filename !== docName)
+        ]);
         // Switch to deliverables tab to showcase generated .docx file
         setActiveTab('deliverables');
       }
       
       refreshAllData();
     } catch (err) {
-      alert('Approval processing error: ' + err.message);
+      console.error('Approval processing error:', err);
     }
   };
 

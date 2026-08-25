@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
-import { AlertTriangle, Check, X, Shield, FileText } from 'lucide-react';
+import { AlertTriangle, Check, X, Shield, FileText, AlertCircle } from 'lucide-react';
 
 export default function ApprovalModal({ request, onDecision, onClose }) {
   const [notes, setNotes] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   if (!request) return null;
 
   const handleAction = async (decision) => {
     setIsSubmitting(true);
-    await onDecision(request.request_id, decision, notes);
-    setIsSubmitting(false);
+    setErrorMessage(null);
+    try {
+      await onDecision(request.request_id, decision, notes);
+    } catch (err) {
+      setErrorMessage(err.message || 'Failed to process approval decision.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -31,6 +38,13 @@ export default function ApprovalModal({ request, onDecision, onClose }) {
 
         {/* Content Details */}
         <div className="space-y-3 text-xs">
+          {errorMessage && (
+            <div className="p-3 bg-red-950/40 border border-red-800/80 rounded text-red-300 text-xs flex items-center space-x-2">
+              <AlertCircle className="w-4 h-4 text-red-400 shrink-0" />
+              <span>{errorMessage}</span>
+            </div>
+          )}
+
           <div className="bg-[#161B22] border border-[#21262D] p-3 rounded space-y-1">
             <span className="text-slate-400 text-[11px] block">Proposed action</span>
             <p className="font-medium text-slate-100">{request.title}</p>
