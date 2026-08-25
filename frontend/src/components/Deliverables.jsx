@@ -1,41 +1,30 @@
-import React from 'react';
-import { FileCheck, Download, FileText } from 'lucide-react';
+import React, { useState } from 'react';
+import { FileCheck, Download, FileText, CheckCircle2 } from 'lucide-react';
+import { downloadDemoDocx } from '../lib/docxGenerator';
 
 export default function Deliverables({ deliverables }) {
-  const handleDownload = (filename) => {
-    // Check if local backend API is active or if running on Netlify/Cloud Showcase
+  const [isGenerating, setIsGenerating] = useState(false);
+
+  const handleDownload = async (filename) => {
+    // Check if running on localhost backend or Netlify public showcase
     const isLocalHost = typeof window !== 'undefined' && (window.location.hostname.includes('localhost') || window.location.hostname.includes('127.0.0.1'));
 
     if (isLocalHost) {
+      // Local mode: download from backend Python python-docx endpoint
       window.location.href = `/api/deliverables/download/${filename}`;
     } else {
-      // Standalone Public Showcase Mode: Generate client-side Synthetic Demo Deliverable blob
-      const docContent = 
-        `========================================================================\n` +
-        `VAJRA — SOVEREIGN AI WORKBENCH (SYNTHETIC DEMO DELIVERABLE)\n` +
-        `MAINTENANCE APPROVAL NOTE #B-102\n` +
-        `========================================================================\n\n` +
-        `FACILITY: SRM/SIH Unit - Zone 4 High Pressure Loop\n` +
-        `EQUIPMENT ID: Boiler Feedwater Pump B-102\n` +
-        `CRITICAL FINDING: Measured drive-end bearing vibration reached 7.8 mm/s RMS,\n` +
-        `exceeding ISO 10816 Class II threshold (4.5 mm/s) & SOP limit (7.0 mm/s).\n\n` +
-        `RECOMMENDED MAINTENANCE ACTION:\n` +
-        `Inspect drive-end bearing sleeve B-102-BRG and perform LOTO clearance on Valve HV-104.\n\n` +
-        `HUMAN GOVERNANCE SIGN-OFF:\n` +
-        `STATUS: APPROVED & SIGNED\n` +
-        `REVIEWER: Chief Maintenance Operations Lead\n` +
-        `TIMESTAMP: ${new Date().toISOString()}\n` +
-        `SECURITY POLICY: Synthetic Demo Deliverable (Air-Gapped Architecture)`;
-
-      const blob = new Blob([docContent], { type: 'application/msword' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = filename || 'MAINTENANCE_APPROVAL_NOTE_B102_DEMO.docx';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
+      // Public Showcase Mode: Generate genuine valid OOXML Word Document (.docx) Blob client-side using `docx` package
+      setIsGenerating(true);
+      try {
+        await downloadDemoDocx(filename || 'MAINTENANCE_APPROVAL_NOTE_B102_DEMO.docx', {
+          filename,
+          timestamp: new Date().toISOString()
+        });
+      } catch (err) {
+        console.error('Failed generating browser .docx deliverable:', err);
+      } finally {
+        setIsGenerating(false);
+      }
     }
   };
 
@@ -49,7 +38,7 @@ export default function Deliverables({ deliverables }) {
             <span>Generated Deliverables (.docx)</span>
           </h2>
           <p className="text-xs text-slate-400 mt-0.5">
-            Document generation via python-docx • Human approval verified
+            Document generation via python-docx / browser OOXML engine • Human approval verified
           </p>
         </div>
 
@@ -87,10 +76,11 @@ export default function Deliverables({ deliverables }) {
 
               <button
                 onClick={() => handleDownload(doc.filename)}
-                className="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-medium text-xs px-4 py-1.5 rounded flex items-center space-x-1.5 transition-colors shrink-0 shadow cursor-pointer"
+                disabled={isGenerating}
+                className="bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-medium text-xs px-4 py-1.5 rounded flex items-center space-x-1.5 transition-colors shrink-0 shadow cursor-pointer disabled:opacity-50"
               >
                 <Download className="w-3.5 h-3.5" />
-                <span>Export .docx</span>
+                <span>{isGenerating ? 'Packaging .docx...' : 'Export .docx'}</span>
               </button>
             </div>
           ))
