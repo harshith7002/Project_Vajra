@@ -21,3 +21,6 @@ Thumbs.db
 .idea/
 .vscode/
 *.log
+# Runtime-generated artifacts (recreated on each run)
+data/outputs/*.docx
+data/audit_trail.jsonl
