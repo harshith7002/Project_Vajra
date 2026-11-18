@@ -1,0 +1,8 @@
+{
+  "_comment": "USD per 1M tokens. Local Ollama models have no per-token bill, so they are 0 by default. To see what the same token volume would cost on a hosted model, set VAJRA_PRICE_AS=<model key below>; eval/compare.py then also reports cost at that rate. Fill hosted rates from the provider's official pricing page and record the date you checked.",
+  "default": {"input_per_1m": 0.0, "output_per_1m": 0.0},
+  "models": {
+    "qwen2.5:3b": {"input_per_1m": 0.0, "output_per_1m": 0.0, "note": "local"},
+    "qwen3-vl:2b": {"input_per_1m": 0.0, "output_per_1m": 0.0, "note": "local"}
+  }
+}

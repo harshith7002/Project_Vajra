@@ -17,5 +17,9 @@ rank_bm25==0.2.2
 fastembed>=0.9
 numpy>=1.26
 
+# Phase 2: multi-agent graph
+langgraph>=1.0
+langgraph-checkpoint-sqlite>=3.0
+
 # Tests
 pytest>=8.0

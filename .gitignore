@@ -29,3 +29,5 @@ data/audit_trail.jsonl
 data/index/
 models/
 .pytest_cache/
+data/traces/
+eval/results/compare.log
