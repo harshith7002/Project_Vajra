@@ -1,0 +1,2655 @@
+{
+  "meta": {
+    "run_at": "2026-11-18T16:18:22",
+    "n_questions": 50,
+    "n_chunks": 382,
+    "embed_model": "nomic-embed-text",
+    "reranker": "Xenova/ms-marco-MiniLM-L-6-v2",
+    "candidates": 20,
+    "rrf_k": 60
+  },
+  "summary": {
+    "bm25": {
+      "recall@1": 0.61,
+      "recall@3": 0.76,
+      "recall@5": 0.84,
+      "recall@10": 0.9,
+      "mrr@10": 0.713,
+      "latency_ms_median": 1.2,
+      "latency_ms_p95": 2.6
+    },
+    "vector": {
+      "recall@1": 0.63,
+      "recall@3": 0.72,
+      "recall@5": 0.78,
+      "recall@10": 0.86,
+      "mrr@10": 0.694,
+      "latency_ms_median": 43.6,
+      "latency_ms_p95": 56.2
+    },
+    "hybrid": {
+      "recall@1": 0.63,
+      "recall@3": 0.76,
+      "recall@5": 0.86,
+      "recall@10": 0.94,
+      "mrr@10": 0.725,
+      "latency_ms_median": 41.6,
+      "latency_ms_p95": 54.4
+    },
+    "hybrid_rerank": {
+      "recall@1": 0.69,
+      "recall@3": 0.88,
+      "recall@5": 0.94,
+      "recall@10": 0.96,
+      "mrr@10": 0.797,
+      "latency_ms_median": 1396.5,
+      "latency_ms_p95": 1884.0
+    }
+  },
+  "per_question": [
+    {
+      "mode": "bm25",
+      "id": "osha-01",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-02",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-03",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-04",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-05",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-06",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-07",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.4"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-08",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.2"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-09",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.2",
+        "OSHA_29CFR1910.147_LOTO.pdf p.4"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-10",
+      "type": "factual",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-11",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.4",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-12",
+      "type": "factual",
+      "evidence_ranks": [
+        4
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.8"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-13",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-14",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.2"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-15",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.9"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-16",
+      "type": "factual",
+      "evidence_ranks": [
+        3
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-17",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-18",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.1-2",
+        "OSHA_29CFR1910.147_LOTO.pdf p.2",
+        "OSHA_29CFR1910.147_LOTO.pdf p.9"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-19",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "osha-20",
+      "type": "factual",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.2"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-01",
+      "type": "definition",
+      "evidence_ranks": [
+        5
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.47",
+        "DOE_Pumping_System_Sourcebook.pdf p.99",
+        "DOE_Pumping_System_Sourcebook.pdf p.41"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-02",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.13-14",
+        "DOE_Pumping_System_Sourcebook.pdf p.103",
+        "DOE_Pumping_System_Sourcebook.pdf p.9"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-03",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.12",
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf p.6"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-04",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.12-13",
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf pp.23-24"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-05",
+      "type": "numeric",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.110",
+        "DOE_Pumping_System_Sourcebook.pdf p.42",
+        "DOE_Pumping_System_Sourcebook.pdf p.111"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-06",
+      "type": "definition",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.42",
+        "DOE_Pumping_System_Sourcebook.pdf p.79",
+        "DOE_Pumping_System_Sourcebook.pdf pp.54-55"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-07",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.53-54",
+        "DOE_Pumping_System_Sourcebook.pdf p.39",
+        "DOE_Pumping_System_Sourcebook.pdf p.30"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-08",
+      "type": "numeric",
+      "evidence_ranks": [
+        4
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.30",
+        "DOE_Pumping_System_Sourcebook.pdf p.53",
+        "DOE_Pumping_System_Sourcebook.pdf pp.53-54"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-09",
+      "type": "definition",
+      "evidence_ranks": [
+        9
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.99",
+        "DOE_Pumping_System_Sourcebook.pdf pp.18-19",
+        "DOE_Pumping_System_Sourcebook.pdf pp.121-122"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-10",
+      "type": "factual",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.12-13",
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf p.5"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-11",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.57",
+        "DOE_Pumping_System_Sourcebook.pdf p.9",
+        "DOE_Pumping_System_Sourcebook.pdf p.9"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-12",
+      "type": "numeric",
+      "evidence_ranks": [
+        6
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.48",
+        "DOE_Pumping_System_Sourcebook.pdf p.52",
+        "DOE_Pumping_System_Sourcebook.pdf p.31"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-13",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.59",
+        "DOE_Pumping_System_Sourcebook.pdf p.88",
+        "DOE_Pumping_System_Sourcebook.pdf p.99"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-14",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.113-114",
+        "DOE_Pumping_System_Sourcebook.pdf pp.33-34",
+        "DOE_Pumping_System_Sourcebook.pdf pp.34-35"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-15",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.41",
+        "DOE_Pumping_System_Sourcebook.pdf p.111",
+        "DOE_Pumping_System_Sourcebook.pdf p.47"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-16",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.116-117",
+        "DOE_Pumping_System_Sourcebook.pdf p.117",
+        "DOE_Pumping_System_Sourcebook.pdf pp.109-110"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-17",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.39",
+        "DOE_Pumping_System_Sourcebook.pdf p.61",
+        "DOE_Pumping_System_Sourcebook.pdf p.13"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-18",
+      "type": "factual",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.66",
+        "DOE_Pumping_System_Sourcebook.pdf p.66",
+        "DOE_Pumping_System_Sourcebook.pdf p.33"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-19",
+      "type": "numeric",
+      "evidence_ranks": [
+        8
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.64",
+        "DOE_Pumping_System_Sourcebook.pdf p.35",
+        "DOE_Pumping_System_Sourcebook.pdf pp.34-35"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-20",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.20",
+        "DOE_Pumping_System_Sourcebook.pdf p.7",
+        "DOE_Pumping_System_Sourcebook.pdf pp.20-21"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-21",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.77",
+        "DOE_Pumping_System_Sourcebook.pdf p.113",
+        "DOE_Pumping_System_Sourcebook.pdf p.84"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-22",
+      "type": "definition",
+      "evidence_ranks": [
+        5
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.100",
+        "DOE_Pumping_System_Sourcebook.pdf p.48",
+        "DOE_Pumping_System_Sourcebook.pdf p.13"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "doe-23",
+      "type": "numeric",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.61",
+        "DOE_Pumping_System_Sourcebook.pdf p.64",
+        "DOE_Pumping_System_Sourcebook.pdf p.13"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "plant-01",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.38"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "plant-02",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "SOP_Pump_Maintenance_2025.pdf p.1"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "plant-03",
+      "type": "factual",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.99",
+        "DOE_Pumping_System_Sourcebook.pdf p.24"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "plant-04",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.45"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "plant-05",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.115",
+        "DOE_Pumping_System_Sourcebook.pdf pp.38-39"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "plant-06",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Safety_Procedure_Plant_Zone4.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf pp.35-37"
+      ]
+    },
+    {
+      "mode": "bm25",
+      "id": "plant-07",
+      "type": "multi_hop",
+      "evidence_ranks": [
+        2,
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf pp.69-70"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-01",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-02",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.4",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.1-2"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-03",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-04",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-05",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf p.4"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-06",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.4"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-07",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-08",
+      "type": "factual",
+      "evidence_ranks": [
+        3
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf p.2",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-09",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-10",
+      "type": "factual",
+      "evidence_ranks": [
+        10
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-11",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-12",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-13",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-14",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.8-9",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-15",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.9"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-16",
+      "type": "factual",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-17",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        3
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.9",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-18",
+      "type": "factual",
+      "evidence_ranks": [
+        8
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-19",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.8-9",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "osha-20",
+      "type": "factual",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-01",
+      "type": "definition",
+      "evidence_ranks": [
+        7
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.99",
+        "DOE_Pumping_System_Sourcebook.pdf p.41",
+        "DOE_Pumping_System_Sourcebook.pdf pp.111-112"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-02",
+      "type": "numeric",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.111-112",
+        "DOE_Pumping_System_Sourcebook.pdf p.48",
+        "DOE_Pumping_System_Sourcebook.pdf pp.43-44"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-03",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.12",
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf pp.116-117"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-04",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.12-13",
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf p.10"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-05",
+      "type": "numeric",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.110",
+        "DOE_Pumping_System_Sourcebook.pdf p.19",
+        "DOE_Pumping_System_Sourcebook.pdf pp.54-55"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-06",
+      "type": "definition",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.42",
+        "DOE_Pumping_System_Sourcebook.pdf p.83",
+        "DOE_Pumping_System_Sourcebook.pdf p.77"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-07",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.53-54",
+        "DOE_Pumping_System_Sourcebook.pdf p.53",
+        "DOE_Pumping_System_Sourcebook.pdf pp.54-55"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-08",
+      "type": "numeric",
+      "evidence_ranks": [
+        5
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.30",
+        "DOE_Pumping_System_Sourcebook.pdf pp.52-53",
+        "DOE_Pumping_System_Sourcebook.pdf p.53"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-09",
+      "type": "definition",
+      "evidence_ranks": [
+        4
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.99",
+        "DOE_Pumping_System_Sourcebook.pdf p.19",
+        "DOE_Pumping_System_Sourcebook.pdf pp.8-9"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-10",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf p.12",
+        "DOE_Pumping_System_Sourcebook.pdf pp.12-13"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-11",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.57",
+        "DOE_Pumping_System_Sourcebook.pdf pp.56-57",
+        "DOE_Pumping_System_Sourcebook.pdf p.31"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-12",
+      "type": "numeric",
+      "evidence_ranks": [
+        8
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.48",
+        "DOE_Pumping_System_Sourcebook.pdf p.31",
+        "DOE_Pumping_System_Sourcebook.pdf p.52"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-13",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.59",
+        "DOE_Pumping_System_Sourcebook.pdf p.9",
+        "DOE_Pumping_System_Sourcebook.pdf pp.13-14"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-14",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.113-114",
+        "DOE_Pumping_System_Sourcebook.pdf pp.114-115",
+        "DOE_Pumping_System_Sourcebook.pdf pp.112-113"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-15",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.113-114",
+        "DOE_Pumping_System_Sourcebook.pdf p.111",
+        "DOE_Pumping_System_Sourcebook.pdf p.41"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-16",
+      "type": "numeric",
+      "evidence_ranks": [
+        3
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.117",
+        "DOE_Pumping_System_Sourcebook.pdf pp.109-110",
+        "DOE_Pumping_System_Sourcebook.pdf pp.116-117"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-17",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.39",
+        "DOE_Pumping_System_Sourcebook.pdf p.61",
+        "DOE_Pumping_System_Sourcebook.pdf pp.60-61"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-18",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.66",
+        "DOE_Pumping_System_Sourcebook.pdf pp.66-67",
+        "DOE_Pumping_System_Sourcebook.pdf p.6"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-19",
+      "type": "numeric",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.19",
+        "DOE_Pumping_System_Sourcebook.pdf pp.33-34",
+        "DOE_Pumping_System_Sourcebook.pdf pp.54-55"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-20",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.20",
+        "DOE_Pumping_System_Sourcebook.pdf pp.57-59",
+        "DOE_Pumping_System_Sourcebook.pdf pp.20-21"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-21",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.77",
+        "DOE_Pumping_System_Sourcebook.pdf p.84",
+        "DOE_Pumping_System_Sourcebook.pdf p.113"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-22",
+      "type": "definition",
+      "evidence_ranks": [
+        4
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.52",
+        "DOE_Pumping_System_Sourcebook.pdf p.13",
+        "DOE_Pumping_System_Sourcebook.pdf p.51"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "doe-23",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.64",
+        "DOE_Pumping_System_Sourcebook.pdf p.64",
+        "DOE_Pumping_System_Sourcebook.pdf p.19"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "plant-01",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "SOP_Pump_Maintenance_2025.pdf p.1"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "plant-02",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf pp.40-41"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "plant-03",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.24"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "plant-04",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Safety_Procedure_Plant_Zone4.pdf p.1"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "plant-05",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "plant-06",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Safety_Procedure_Plant_Zone4.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.25",
+        "DOE_Pumping_System_Sourcebook.pdf pp.25-26"
+      ]
+    },
+    {
+      "mode": "vector",
+      "id": "plant-07",
+      "type": "multi_hop",
+      "evidence_ranks": [
+        2,
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-01",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.4"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-02",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.4"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-03",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-04",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-05",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-06",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        6
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-07",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-08",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf p.2",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-09",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        9
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-10",
+      "type": "factual",
+      "evidence_ranks": [
+        3
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-11",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-12",
+      "type": "factual",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-13",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-14",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.1-2"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-15",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.9"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-16",
+      "type": "factual",
+      "evidence_ranks": [
+        9
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-17",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.9"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-18",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.1-2",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.8"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-19",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "osha-20",
+      "type": "factual",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-01",
+      "type": "definition",
+      "evidence_ranks": [
+        5
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.99",
+        "DOE_Pumping_System_Sourcebook.pdf p.47",
+        "DOE_Pumping_System_Sourcebook.pdf p.41"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-02",
+      "type": "numeric",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.112-113",
+        "DOE_Pumping_System_Sourcebook.pdf pp.13-14",
+        "DOE_Pumping_System_Sourcebook.pdf p.61"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-03",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.12",
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf p.5"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-04",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.12-13",
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf p.10"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-05",
+      "type": "numeric",
+      "evidence_ranks": [
+        7
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.110",
+        "DOE_Pumping_System_Sourcebook.pdf p.111",
+        "DOE_Pumping_System_Sourcebook.pdf pp.109-110"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-06",
+      "type": "definition",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.42",
+        "DOE_Pumping_System_Sourcebook.pdf p.83",
+        "DOE_Pumping_System_Sourcebook.pdf pp.54-55"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-07",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.53-54",
+        "DOE_Pumping_System_Sourcebook.pdf p.53",
+        "DOE_Pumping_System_Sourcebook.pdf p.30"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-08",
+      "type": "numeric",
+      "evidence_ranks": [
+        5
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.30",
+        "DOE_Pumping_System_Sourcebook.pdf p.53",
+        "DOE_Pumping_System_Sourcebook.pdf pp.52-53"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-09",
+      "type": "definition",
+      "evidence_ranks": [
+        3
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.99",
+        "DOE_Pumping_System_Sourcebook.pdf pp.18-19",
+        "DOE_Pumping_System_Sourcebook.pdf p.55"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-10",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf pp.12-13",
+        "DOE_Pumping_System_Sourcebook.pdf pp.59-60"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-11",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.57",
+        "DOE_Pumping_System_Sourcebook.pdf p.31",
+        "DOE_Pumping_System_Sourcebook.pdf p.39"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-12",
+      "type": "numeric",
+      "evidence_ranks": [
+        5
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.48",
+        "DOE_Pumping_System_Sourcebook.pdf p.52",
+        "DOE_Pumping_System_Sourcebook.pdf p.31"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-13",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.59",
+        "DOE_Pumping_System_Sourcebook.pdf p.88",
+        "DOE_Pumping_System_Sourcebook.pdf pp.6-7"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-14",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.113-114",
+        "DOE_Pumping_System_Sourcebook.pdf p.39",
+        "DOE_Pumping_System_Sourcebook.pdf pp.117-118"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-15",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.41",
+        "DOE_Pumping_System_Sourcebook.pdf p.111",
+        "DOE_Pumping_System_Sourcebook.pdf pp.13-14"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-16",
+      "type": "numeric",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.117",
+        "DOE_Pumping_System_Sourcebook.pdf pp.116-117",
+        "DOE_Pumping_System_Sourcebook.pdf pp.109-110"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-17",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.39",
+        "DOE_Pumping_System_Sourcebook.pdf p.61",
+        "DOE_Pumping_System_Sourcebook.pdf p.60"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-18",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.66",
+        "DOE_Pumping_System_Sourcebook.pdf pp.66-67",
+        "DOE_Pumping_System_Sourcebook.pdf p.6"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-19",
+      "type": "numeric",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.64",
+        "DOE_Pumping_System_Sourcebook.pdf pp.33-34",
+        "DOE_Pumping_System_Sourcebook.pdf pp.34-35"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-20",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.20",
+        "DOE_Pumping_System_Sourcebook.pdf pp.20-21",
+        "DOE_Pumping_System_Sourcebook.pdf p.57"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-21",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.77",
+        "DOE_Pumping_System_Sourcebook.pdf p.113",
+        "DOE_Pumping_System_Sourcebook.pdf p.84"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-22",
+      "type": "definition",
+      "evidence_ranks": [
+        4
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.52",
+        "DOE_Pumping_System_Sourcebook.pdf p.13",
+        "DOE_Pumping_System_Sourcebook.pdf p.51"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "doe-23",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.64",
+        "DOE_Pumping_System_Sourcebook.pdf p.61",
+        "DOE_Pumping_System_Sourcebook.pdf pp.63-64"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "plant-01",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.38"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "plant-02",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "SOP_Pump_Maintenance_2025.pdf p.1"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "plant-03",
+      "type": "factual",
+      "evidence_ranks": [
+        5
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.24",
+        "DOE_Pumping_System_Sourcebook.pdf pp.24-25"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "plant-04",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Safety_Procedure_Plant_Zone4.pdf p.1"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "plant-05",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "plant-06",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Safety_Procedure_Plant_Zone4.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf pp.35-37",
+        "DOE_Pumping_System_Sourcebook.pdf pp.20-21"
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "id": "plant-07",
+      "type": "multi_hop",
+      "evidence_ranks": [
+        2,
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-01",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.8",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-02",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.8"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-03",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-04",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-05",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.8",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-06",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.8"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-07",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-08",
+      "type": "factual",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-09",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-10",
+      "type": "factual",
+      "evidence_ranks": [
+        3
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.6"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-11",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.4-5",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-12",
+      "type": "factual",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.4",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.6-7",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-13",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-14",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-15",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.9",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-16",
+      "type": "factual",
+      "evidence_ranks": [
+        4
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.2-3",
+        "OSHA_29CFR1910.147_LOTO.pdf p.8"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-17",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.3-4",
+        "OSHA_29CFR1910.147_LOTO.pdf p.8",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-18",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.1-2",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7",
+        "OSHA_29CFR1910.147_LOTO.pdf p.8"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-19",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.8-9",
+        "OSHA_29CFR1910.147_LOTO.pdf p.7"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "osha-20",
+      "type": "factual",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "OSHA_29CFR1910.147_LOTO.pdf p.5",
+        "OSHA_29CFR1910.147_LOTO.pdf p.3",
+        "OSHA_29CFR1910.147_LOTO.pdf pp.7-8"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-01",
+      "type": "definition",
+      "evidence_ranks": [
+        4
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.99",
+        "DOE_Pumping_System_Sourcebook.pdf p.47",
+        "DOE_Pumping_System_Sourcebook.pdf p.41"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-02",
+      "type": "numeric",
+      "evidence_ranks": [
+        3
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.112-113",
+        "DOE_Pumping_System_Sourcebook.pdf p.61",
+        "DOE_Pumping_System_Sourcebook.pdf pp.13-14"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-03",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.12",
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf p.76"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-04",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.12-13",
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf p.10"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-05",
+      "type": "numeric",
+      "evidence_ranks": [
+        6
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.110",
+        "DOE_Pumping_System_Sourcebook.pdf p.43",
+        "DOE_Pumping_System_Sourcebook.pdf p.111"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-06",
+      "type": "definition",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.42",
+        "DOE_Pumping_System_Sourcebook.pdf pp.109-110",
+        "DOE_Pumping_System_Sourcebook.pdf p.43"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-07",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.53-54",
+        "DOE_Pumping_System_Sourcebook.pdf p.53",
+        "DOE_Pumping_System_Sourcebook.pdf p.43"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-08",
+      "type": "numeric",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.53",
+        "DOE_Pumping_System_Sourcebook.pdf pp.54-55",
+        "DOE_Pumping_System_Sourcebook.pdf p.30"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-09",
+      "type": "definition",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf p.99",
+        "DOE_Pumping_System_Sourcebook.pdf pp.20-21"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-10",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.55",
+        "DOE_Pumping_System_Sourcebook.pdf pp.12-13",
+        "DOE_Pumping_System_Sourcebook.pdf p.12"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-11",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.57",
+        "DOE_Pumping_System_Sourcebook.pdf pp.56-57",
+        "DOE_Pumping_System_Sourcebook.pdf pp.57-59"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-12",
+      "type": "numeric",
+      "evidence_ranks": [
+        5
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.48",
+        "DOE_Pumping_System_Sourcebook.pdf p.31",
+        "DOE_Pumping_System_Sourcebook.pdf p.52"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-13",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.59",
+        "DOE_Pumping_System_Sourcebook.pdf p.9",
+        "DOE_Pumping_System_Sourcebook.pdf p.88"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-14",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.113-114",
+        "DOE_Pumping_System_Sourcebook.pdf pp.114-115",
+        "DOE_Pumping_System_Sourcebook.pdf p.39"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-15",
+      "type": "paraphrase",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.111",
+        "DOE_Pumping_System_Sourcebook.pdf p.41",
+        "DOE_Pumping_System_Sourcebook.pdf p.59"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-16",
+      "type": "numeric",
+      "evidence_ranks": [
+        3
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.117",
+        "DOE_Pumping_System_Sourcebook.pdf pp.18-19",
+        "DOE_Pumping_System_Sourcebook.pdf pp.116-117"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-17",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.39",
+        "DOE_Pumping_System_Sourcebook.pdf p.61",
+        "DOE_Pumping_System_Sourcebook.pdf p.39"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-18",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.66",
+        "DOE_Pumping_System_Sourcebook.pdf p.6",
+        "DOE_Pumping_System_Sourcebook.pdf pp.66-67"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-19",
+      "type": "numeric",
+      "evidence_ranks": [
+        null
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.35",
+        "DOE_Pumping_System_Sourcebook.pdf p.64",
+        "DOE_Pumping_System_Sourcebook.pdf p.24"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-20",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.20",
+        "DOE_Pumping_System_Sourcebook.pdf p.57",
+        "DOE_Pumping_System_Sourcebook.pdf pp.57-59"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-21",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.77",
+        "DOE_Pumping_System_Sourcebook.pdf p.113",
+        "DOE_Pumping_System_Sourcebook.pdf p.84"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-22",
+      "type": "definition",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf pp.21-23",
+        "DOE_Pumping_System_Sourcebook.pdf p.52",
+        "DOE_Pumping_System_Sourcebook.pdf p.100"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "doe-23",
+      "type": "numeric",
+      "evidence_ranks": [
+        2
+      ],
+      "top3": [
+        "DOE_Pumping_System_Sourcebook.pdf p.111",
+        "DOE_Pumping_System_Sourcebook.pdf p.64",
+        "DOE_Pumping_System_Sourcebook.pdf p.19"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "plant-01",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "SOP_Pump_Maintenance_2025.pdf p.1"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "plant-02",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "SOP_Pump_Maintenance_2025.pdf p.1"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "plant-03",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.24",
+        "DOE_Pumping_System_Sourcebook.pdf pp.24-25"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "plant-04",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "Safety_Procedure_Plant_Zone4.pdf p.1"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "plant-05",
+      "type": "numeric",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.115"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "plant-06",
+      "type": "factual",
+      "evidence_ranks": [
+        1
+      ],
+      "top3": [
+        "Safety_Procedure_Plant_Zone4.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "DOE_Pumping_System_Sourcebook.pdf p.25"
+      ]
+    },
+    {
+      "mode": "hybrid_rerank",
+      "id": "plant-07",
+      "type": "multi_hop",
+      "evidence_ranks": [
+        2,
+        1
+      ],
+      "top3": [
+        "SOP_Pump_Maintenance_2025.pdf p.1",
+        "Pump_Inspection_Report_07.pdf p.1",
+        "SOP_Pump_Maintenance_2025.pdf p.1"
+      ]
+    }
+  ]
+}

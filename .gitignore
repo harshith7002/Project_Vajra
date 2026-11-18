@@ -24,3 +24,8 @@ Thumbs.db
 # Runtime-generated artifacts (recreated on each run)
 data/outputs/*.docx
 data/audit_trail.jsonl
+
+# Rebuild: local index, model cache, eval scratch
+data/index/
+models/
+.pytest_cache/
